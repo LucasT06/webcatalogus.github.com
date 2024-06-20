@@ -1,0 +1,61 @@
+body {
+    background-image: url('/img/homePage.png');
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(20, 1fr);
+    height: 100vh;
+}
+header { 
+    display: grid;
+    grid-area: 1/1/2/12; 
+}
+
+header nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid black; 
+}
+
+header nav a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+}
+
+.img {
+    height: 57px;
+}
+
+
+.grid {
+    display: grid;
+    grid-area: 3/7/5/18;
+    gap: 10px;
+}
+
+
+.bericht {
+    height: 50vh;
+}
+
+.grid {
+    display: grid;
+    gap: 10px;
+}
+.grid {
+    display: grid;
+    gap: 10px;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: rgb(5, 182, 5);
+}

@@ -1,0 +1,111 @@
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/img/pal.webp);
+    display: grid;
+}
+
+.current-page {
+    background-color: aqua;
+}
+
+a {
+    border: 1px solid black;
+    font-size: xx-large;
+    color: white;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.im {
+    width: 40px;
+}
+
+a:hover {
+    background-color: blue;
+}
+
+.body-container {
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 100px minmax(auto, auto);
+    grid-template-columns: 1fr minmax(30%, 70%) 1fr;
+    grid-template-areas: "hd hd " "none mn";
+}
+
+header {
+    grid-area: hd;
+}
+
+.merch-container,
+.info-container,
+.bundel-container {
+    display: grid;
+    gap: 20px;
+    grid-template-rows: minmax(auto, auto);
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid black;
+}
+
+img {
+    width: 300px;
+}
+
+.card {
+    border: 1px solid black;
+    background-color: white;
+}
+
+main {
+    grid-area: mn;
+    background-color: rgba(79, 165, 240, 0.692);
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 768px) {
+    .merch-container, .info-container {
+        grid-template-columns: 1fr;
+        grid-template-areas: "hd" "mn";
+    }
+
+<<<<<<< HEAD
+    .merch-container, .info-container {
+=======
+    .merch-container,
+    .info-container,
+    .bundel-container {
+>>>>>>> origin/lucas
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+@media screen and (max-width: 900px) {
+<<<<<<< HEAD
+    .merch-container, .info-container {
+=======
+
+    .merch-container,
+    .info-container,
+    .bundel-container {
+>>>>>>> origin/lucas
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+<<<<<<< HEAD
+    .merch-container, .info-container {
+=======
+
+    .merch-container,
+    .info-container,
+    .bundel-container {
+>>>>>>> origin/lucas
+        grid-template-columns: 1fr;
+    }
+}

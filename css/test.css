@@ -1,0 +1,23 @@
+ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(150px, auto);
+    gap:10px;
+}
+
+h2 {
+    display: block;
+    height: 50px;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+.cta {
+    display: block;
+    height: 50px;
+    background-color: green;
+    color: white;
+    text-align: center;
+}

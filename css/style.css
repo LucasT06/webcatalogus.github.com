@@ -1,0 +1,199 @@
+body {
+    background-image: url('/img/homePage.png');
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+body.body-container{
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(20,1fr);
+    height: 100vh;
+}
+
+.extention-container{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 20;
+    grid-column-end: 21;  
+}
+
+.extention-btn {
+    width: 100px;
+    height: 100px;
+    right: 1%;
+    position: absolute;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.extention-content {
+    position: absolute;
+    width: 50%;
+    height: 920px;
+    top: 0;
+    right: -105px; 
+    border: 1px solid black;
+    background-color: rgba(79, 165, 240, 0.692);
+    display: none;
+}
+
+.extention-content a {
+    display: flex;
+    flex-direction: row;   
+    justify-content: center;
+    align-content: space-around;
+    width: 50%; 
+    height: 50px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+
+}
+
+.extention-content a:hover {
+    background-color: rgba(0, 255, 76, 0.637);
+}
+
+.extention-container:hover .extention-content{
+    display: block;
+}
+
+.extention-btn div {
+    position: relative;
+    border-top: 2px solid black;
+    width: 80%;
+    left: 10%;
+}
+
+.current-page{
+    background-color: rgba(0, 255, 76, 0.637);
+}
+
+header {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 12;   
+}
+
+header nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid black; 
+}
+
+header nav a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+}
+
+.market-container {
+    grid-row-start: 2;
+    grid-row-end: 9;
+    grid-column-start: 1;
+    grid-column-end: 20;  
+}
+
+.market-container h1 {
+    text-align: center;
+}
+
+.wrapper {
+    display: grid;
+    gap: 10px;
+}
+
+.div {
+    border: 2px solid ;
+}
+
+div h1 {
+    font-size: 90px;
+}
+
+
+main.over-ons-container {
+    grid-row-start: 2;
+    grid-row-end: 20;
+    grid-column-start: 6;
+    grid-column-end: 15;  
+    border: 1px solid black; 
+}
+
+.titlebar {
+    grid-row-start: 1;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 12; 
+      
+}
+
+
+.market-link-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.market-link-container a {
+    text-align: center;
+    /* background-color: black; */
+    width: 30%;
+    height: 20vh;
+    padding-top: 15vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.fout  {
+    border: 1px solid red;
+}
+ 
+.goed {
+    border: 1px solid greenyellow;
+}
+
+.info {
+    grid-area: 5/11/7/14;
+    
+}
+
+nav .pal-world {
+    background-image: url('/img/palworld.PNG');
+}
+
+nav .warframe {
+    background-image: url('/img/warframe.png');
+}
+
+nav .arena-breakout {
+    background-image: url('/img/Arena\ breakout.avif');
+}
+
+a img{
+    width: 50px;
+}
+
+footer img {
+    width: 100px;
+}
+
+@media (max-width:1000px) {
+    a {
+        margin-right: 0px;
+    }
+}

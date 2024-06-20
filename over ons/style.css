@@ -1,0 +1,83 @@
+body {
+    background-image: url('/img/homePage.png');
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.image {
+    width: 50px;
+    align-items: center;
+    align-content: center;
+}
+
+header nav a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+}
+
+header nav {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.current-page {
+    background-color: rgba(0, 255, 76, 0.637);
+    grid-column: span 1;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 2fr); /* Each row is set to 2fr */
+    gap: 10px;
+    grid-template-areas: 
+        "kuba tx1 tx1 tx1 tx1 tx1 tx1 tx1 tx1 tx1 tx1 tx1"
+        "duncan tx2 tx2 tx2 tx2 tx2 tx2 tx2 tx2 tx2 tx2 tx2"
+        "lucas tx3 tx3 tx3 tx3 tx3 tx3 tx3 tx3 tx3 tx3 tx3";
+}
+
+
+/* Define grid areas */
+.kuba {
+    grid-area: kuba;
+}
+
+.box1 {
+    grid-area: tx1;
+}
+
+.duncan {
+    grid-area: duncan;
+}
+
+.box2 {
+    grid-area: tx2;
+}
+
+.lucas {
+    grid-area: lucas;
+}
+
+.box3 {
+    grid-area: tx3;
+}
+.kuba, .duncan, .lucas {
+    border-radius: 100%;
+    justify-content: center;
+    justify-items: center;
+}
+
+div .img{
+    height: 150px;
+    width: 150px;
+    border-radius: 100%; 
+    border: 1px solid black;
+}
+
+.box1, .box2, .box3 {
+    margin-top: 50px;
+}
